@@ -10,7 +10,10 @@ export default defineConfig({
     vue(),
     vueDevTools(),
   ],
-  base: process.env.NODE_ENV === 'production' ? '/vue-calendar/' : '/',
+  base: '/vue-calendar/',
+  build: {
+    outDir: 'dist'
+  },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
