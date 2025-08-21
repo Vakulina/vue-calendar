@@ -220,6 +220,7 @@ watch(() => props.locale, () => {
 onMounted(() => {
   initializeDate()
 })
+
 </script>
 
 <style scoped>
